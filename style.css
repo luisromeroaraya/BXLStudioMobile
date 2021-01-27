@@ -89,12 +89,12 @@ input[type=text]{
     margin: 1px;
   }
   
-  #text {
+#text {
     width: 400px;
     height: 100px;
-  }
+}
 
-  input[type=email]{
+input[type=email]{
     width: 199px;
     padding: 10px;
     box-sizing: border-box;
@@ -104,9 +104,9 @@ input[type=text]{
     background-color: rgba(80,85,98,1);
     border: none;
     margin: 1px;
-  }
+}
   
-  input[type=submit]{
+input[type=submit]{
     width: 150px;
     padding: 10px;
     box-sizing: border-box;
@@ -115,4 +115,44 @@ input[type=text]{
     background-color: rgba(55,59,77,1);
     border: none;
     margin: 1px;
-  }
+}
+
+.myPopup {
+
+    position: absolute;
+    opacity: 0;
+    transition: opacity 400ms ease-in;
+}
+
+.myPopup:target {
+    opacity: 1;
+}
+
+.myPopup div {
+    position: absolute;
+    padding: 20px;
+    border-radius: 5px;
+    background: black;
+}
+
+.myPopup img {
+    position: absolute;
+        opacity: 0;
+
+}
+
+.close {
+    position: absolute;
+    background: #606061;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 24px;
+    right: -12px;
+    top: -12px;
+    width: 24px;
+    text-decoration: none;
+}
+
+.close:hover { 
+    background: white; 
+}
