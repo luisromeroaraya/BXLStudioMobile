@@ -42,12 +42,12 @@ li a {
 }
 
 #gridHeader {
-    background-image: url("images/banner.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url("images/banner.jpg") no-repeat center center;
+    background-size: 100% 100%;
     color: white;
-    height: 380px;
+    height: 450px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #headerR img {
@@ -56,8 +56,19 @@ li a {
 }
 
 #headerR h2 {
+    font-family: 'Advent Pro', sans-serif;
+    font-style: italic;
     color: #474747;
-    text-shadow: 1px 1px #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff;
+    text-shadow:
+     1px  1px     #fff, 
+    -1px  1px     #fff, 
+     1px -1px     #fff, 
+    -1px -1px     #fff,
+     1px  1px 5px #555;
+}
+
+#videos .row {
+    background-color: black;
 }
 
 #contactR {
@@ -65,3 +76,43 @@ li a {
     background-repeat: no-repeat;
     background-position: center top;
 }
+
+input[type=text]{
+    width: 199px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    font-family: serif;
+    font-style: italic;
+    background-color: rgba(80,85,98,1);
+    border: none;
+    margin: 1px;
+  }
+  
+  #text {
+    width: 400px;
+    height: 100px;
+  }
+
+  input[type=email]{
+    width: 199px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    font-family: serif;
+    font-style: italic;
+    background-color: rgba(80,85,98,1);
+    border: none;
+    margin: 1px;
+  }
+  
+  input[type=submit]{
+    width: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    font-family: serif;
+    background-color: rgba(55,59,77,1);
+    border: none;
+    margin: 1px;
+  }
