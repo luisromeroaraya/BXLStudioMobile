@@ -41,7 +41,7 @@ li a {
     padding-right: 10px;
 }
 
-#gridHeader {
+#headerGrid {
     background: url("images/banner.jpg") no-repeat center center;
     background-size: 100% 100%;
     color: white;
@@ -88,11 +88,6 @@ input[type=text]{
     border: none;
     margin: 1px;
   }
-  
-#text {
-    width: 400px;
-    height: 100px;
-}
 
 input[type=email]{
     width: 199px;
@@ -106,13 +101,38 @@ input[type=email]{
     margin: 1px;
 }
   
-input[type=submit]{
+input[type=tel]{
+    width: 199px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    font-family: serif;
+    font-style: italic;
+    background-color: rgba(80,85,98,1);
+    border: none;
+    margin: 1px;
+}
+
+#text {
+    width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    font-family: serif;
+    font-style: italic;
+    background-color: rgba(80,85,98,1);
+    border: none;
+    margin: 1px;
+}
+
+/* input[type=submit]{
     width: 150px;
     padding: 10px;
     box-sizing: border-box;
     color: white;
     font-family: serif;
-    background-color: rgba(55,59,77,1);
+    background-color: rgb(63, 66, 80);
     border: none;
     margin: 1px;
 }
+*/
