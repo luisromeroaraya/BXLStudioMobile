@@ -12,7 +12,11 @@ p, h2, h3, h4 {
     color: silver;
 }
 
-#headerGrid {
+body {
+    margin-top: 100px;
+}
+
+#bannerGrid {
     background: url("images/banner.jpg") no-repeat center center;
     background-size: 100% 100%;
     color: white;
@@ -21,12 +25,12 @@ p, h2, h3, h4 {
     margin-right: 0px;
 }
 
-#headerR img {
+#bannerR img {
     background-color: white;
     border-radius: 50%;
 }
 
-#headerR h2 {
+#bannerR h2 {
     font-family: 'Advent Pro', sans-serif;
     font-style: italic;
     color: #474747;
