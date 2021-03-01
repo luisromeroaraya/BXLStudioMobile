@@ -25,50 +25,47 @@
     </head>
  
     <body class="container bg-dark text-white">
-        <header class="header p-2">
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark container fixed-top" aria-label="Header">
+        <header class="container bg-dark fixed-top">
+            <nav class="navbar navbar-expand-md navbar-dark" aria-label="Header">
                 <a class="navbar-brand" href="https://www.bxlstudiomobile.com"><img src="images/logoheader.webp" width="auto" height="80px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="menu">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#top">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#musique">Musique</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#videos">Vidéos</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#contact">Contact</a></li>
+                    <ul class="navbar-nav bg-dark">
+                        <li class="nav-item d-flex justify-content-center"><a class="nav-link active" aria-current="page" href="#top">Accueil</a></li>
+                        <li class="nav-item d-flex justify-content-center"><a class="nav-link active" href="#services">Services</a></li>
+                        <li class="nav-item d-flex justify-content-center"><a class="nav-link active" href="#musique">Musique</a></li>
+                        <li class="nav-item d-flex justify-content-center"><a class="nav-link active" href="#videos">Vidéos</a></li>
+                        <li class="nav-item d-flex justify-content-center"><a class="nav-link active" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
-            <hr>
         </header>
 
-        <main>
-            <section id="banner" class="p-2">
-                <div id="bannerGrid" class="row">
-                    <div id="bannerL" class="col">
-                    </div>
-                    <div id="bannerR" class="col text-center align-self-center">
-                        <img src="images/logo.webp" width="265px" height="263px" alt="Logo">
-                        <h2 class="font-italic">Studio d'enregistrement multipiste</h>
-                    </div>
-                </div>
+        <main class="container-fluid">
+            <section id="banner" class="row">
                 <hr>
+                <div id="bannerL" class="col">
+                </div>
+                <div id="bannerR" class="col text-center">
+                    <img src="images/logo.webp" width="265px" height="263px" alt="Logo">
+                    <h2 class="font-italic">Studio d'enregistrement multipiste</h>
+                </div>
             </section>
-            <section  id="services" class="p-2">
-                <h2 class="text-center">Session d'enregistrement multipiste</h2>
-                <h3 class="text-center">(Dans et hors Bruxelles)</h3>
-                <br>
 
-                <div id="fichetechnique" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fichetechniqueLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
+            <section  id="services" class="row">
+                <hr>
+                <div class="col-12">
+                    <h2 class="text-center">Session d'enregistrement multipiste</h2>
+                    <h3 class="text-center">(Dans et hors Bruxelles)</h3>
+                </div>
+                <!-- MODAL FICHE TECHNIQUE -->
+                <article id="fichetechnique" class="modal fade" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog bg-dark" role="document">
                         <div class="modal-content bg-dark text-center">
-                            <div class="modal-header">
-                                <h5 id="fichetechniqueLabel" class="modal-title">Fiche technique</h5>
-                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                            <div class="modal-header justify-content-center">
+                                <h4 class="modal-title">Fiche technique</h4>
                             </div>
                             <div class="modal-body">
                                 <p>Behringer X-Air XR18<br>
@@ -87,92 +84,84 @@
                                     2x AKG K-72</p>
                             </div>
                         </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        </div>
                     </div>
-                </div>
+                </article>
+                <!-- END MODAL -->
 
-                <div id="servicesGrid" class="row">
-                    <div id="servicesL" class="col">
-                        <img class="w-100" src="images/servicesL.webp" alt="Studio recording">
-                        <br>
-                        <br>
-                        <h4 class="text-center">Le studio chez toi !</h4>
-                        <p class="text-justify">Enregistrement simultané jusqu'à 16 pistes à l'endroit de ta convenance. Possibilité d'enregistrer tous ensemble ou piste par piste. Idéal pour l'élaboration de tes premiers morceaux démo ou maquettes. À la fin de la session, tu reçois; tant un pré-mixage de l'enregistrement que toutes les pistes audio séparées. Le service de mixage par morceaux implique un coût supplémentaire.</p>
-                    </div>
-                    <div id="servicesR" class="col">
-                        <img class="w-100" src="images/servicesR.webp" alt="Concert recording">
-                        <br>
-                        <br>
-                        <h4 class="text-center">Enregistre ton concert !</h4>
-                        <p class="text-center">Indispensable pour complémenter tes vidéos en direct.</p>
-                        <p class="text-center">Prix par session 4h: 200 € TVAC<br>
-                        Prix par session 8h: 360 € TVAC<br>
-                        (Les tarifs sont indiqués à titre indicatif)<br></p>
-                        <p class="text-center">Clickez ici pour regarder la <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#fichetechnique">fiche technique</button></p>
-                    </div>
+                <div id="servicesL" class="col-12 col-md-6">
+                    <img class="w-100" src="images/servicesL.webp" alt="Studio recording">
+                    <br>
+                    <br>
+                    <h4 class="text-center">Le studio chez toi !</h4>
+                    <p class="text-justify">Enregistrement simultané jusqu'à 16 pistes à l'endroit de ta convenance. Possibilité d'enregistrer tous ensemble ou piste par piste. Idéal pour l'élaboration de tes premiers morceaux démo ou maquettes. À la fin de la session, tu reçois; tant un pré-mixage de l'enregistrement que toutes les pistes audio séparées. Le service de mixage par morceaux implique un coût supplémentaire.</p>
                 </div>
-                <hr>
+                <div id="servicesR" class="col-12 col-md-6">
+                    <img class="w-100" src="images/servicesR.webp" alt="Concert recording">
+                    <br>
+                    <br>
+                    <h4 class="text-center">Enregistre ton concert !</h4>
+                    <p class="text-center">Indispensable pour complémenter tes vidéos en direct.</p>
+                    <p class="text-center">Prix par session 4h: 200 € TVAC<br>
+                    Prix par session 8h: 360 € TVAC<br>
+                    (Les tarifs sont indiqués à titre indicatif)<br></p>
+                    <p class="text-center">Clickez ici pour regarder la <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#fichetechnique">fiche technique</button></p>
+                </div>
             </section>
-            <section id="musique" class="p-2">
-                <div id="musiqueBanner"><img class="w-100" src="images/360.jpg"></div>
-                <div id="musiquePlayer">
-                    <iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/973786141&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    <iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/973784998&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    <iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/973782619&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    <iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/973781647&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                    <iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/973798219&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                </div>
+
+            <section id="musique" class="row">
                 <hr>
+                <div id="musiquePhoto" class="w-100"></div>
+                <iframe class="song col-12 col-md-6" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/973786141&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                <iframe class="song col-12 col-md-6" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/973784998&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                <iframe class="song col-12 col-md-6" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/973782619&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                <iframe class="song col-12 col-md-6" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/973781647&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                <iframe class="song col-12 col-md-6" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/973798219&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                <iframe class="song col-12 col-md-6" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/973798219&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
             </section>
-            <section id="videos" class="text-center align-self-stretch justify-items-stretch">
-                <div class="row g-0 p-0 m-0">
-                    <div class="col">
-                        <iframe class="d-flex w-100" height="300px" src="https://www.youtube.com/embed/UZt8jyHf-2Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col">
-                        <iframe class="d-flex w-100" height="300px" src="https://player.vimeo.com/video/76301149" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col">
-                        <iframe class="d-flex w-100" height="300px" src="https://www.youtube.com/embed/94iNN4eiYq0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col">
-                        <iframe class="d-flex w-100" height="300px" src="https://www.youtube.com/embed/eR0G8po084I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
+            
+            <section id="videos" class="row">
                 <hr>
+                <iframe class="video col-12 col-md-6" src="https://www.youtube.com/embed/UZt8jyHf-2Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                <iframe class="video col-12 col-md-6" src="https://player.vimeo.com/video/76301149" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="video col-12 col-md-6" src="https://www.youtube.com/embed/94iNN4eiYq0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                <iframe class="video col-12 col-md-6" src="https://www.youtube.com/embed/eR0G8po084I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
-            <section id="contact" class="p-2">
-                <div id="contactGrid" class="row">
-                    <div id="contactL" class="col">
-                        <h2 class="text-center">Contacte-nous pour un devis détaillé et adapté de ton projet.</h2>
-                        <br>
-                        <form id="contactForm" action="https://send.pageclip.co/2MwHvTxZPPqL20P5lZ6PlziTLDrSvI45/Contact" class="pageclip-form" method="post">
-                            <input id="prenom" type="text" name="fname" placeholder="Prénom" required><input id="famille" type="text" name="lname" placeholder="Nom de famille"><br>
-                            <input id="email" type="email" name="email" placeholder="Email" required><input id="telephone" type="tel" name="phone" placeholder="Téléphone e.g: 0123456789" pattern="0[1-9]{3}[0-9]{6}"><br>
-                            <textarea id="text" name="body" placeholder="Date, heure, lieu, nombre de pistes, instruments, etc..." rows="4" required></textarea><br>
-                            <button id="submit" type="submit" class="btn btn-secondary pageclip-form__submit">
-                                <span>Send</span>
-                            </button>
-                            <input id="subject" type="hidden" name="subject" value="Contact">
-                        </form>
-                    </div>
-                    <div class="col" id=contactR>
-                        <p class="text-center">BXL Studio Mobile</p>
-                        <p class="text-center">bxlstudiomobile@gmail.com</p>
-                        <ul class="d-flex align-items-center justify-content-center">
-                            <li><a href="https://www.facebook.com/BXLStudiomobile"><img src="images/fb.webp" width="26px" height="26px" alt="logo fb"></a></li>
-                            <li><a href="https://www.instagram.com/BXLStudiomobile"><img src="images/ig.webp" width="26px" height="26px" alt="logo ig"></a></li>
-                        </ul>
-                        <p class="text-center">Facturation via SMARTBE<br>
-                                               Productions associées ASBL<br>
-                                               Rue Emile Féron 70, 1060 Bruxelles<br>
-                                               TVA N° BE 0896 755 397</p>
-                    </div>
-                </div>
+
+            <section id="contact" class="row mb-3">
                 <hr>
+                <div id="contactL" class="col-12 col-md-6">
+                    <h2 class="text-center">Contacte-nous pour un devis détaillé et adapté de ton projet.</h2>
+                    <br>
+                    <form id="contactForm" action="https://send.pageclip.co/2MwHvTxZPPqL20P5lZ6PlziTLDrSvI45/Contact" class="pageclip-form row" method="post">
+                        <input id="prenom" class="col-12 col-md-6 mb-1" type="text" name="fname" placeholder="Prénom" required><input id="famille" class="col-12 col-md-6 mb-1" type="text" name="lname" placeholder="Nom de famille">
+                        <input id="email" class="col-12 col-md-6 mb-1" type="email" name="email" placeholder="Email" required><input id="telephone" class="col-12 col-md-6 mb-1" type="tel" name="phone" placeholder="Téléphone e.g: 0123456789" pattern="0[1-9]{3}[0-9]{6}">
+                        <textarea id="text" class="col-12 mb-1" name="body" placeholder="Date, heure, lieu, nombre de pistes, instruments, etc..." rows="4" required></textarea>
+                        <button id="submit" type="submit" class="col-4 btn btn-secondary pageclip-form__submit">
+                            <span>Send</span>
+                        </button>
+                        <input id="subject" type="hidden" name="subject" value="Contact">
+                    </form>
+                </div>
+                <div id=contactR class="col-12 col-md-6 text-center">
+                    <p>BXL Studio Mobile</p>
+                    <p>bxlstudiomobile@gmail.com</p>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li><a href="https://www.facebook.com/BXLStudiomobile"><img src="images/fb.webp" width="26px" height="26px" alt="logo fb"></a></li>
+                        <li><a href="https://www.instagram.com/BXLStudiomobile"><img src="images/ig.webp" width="26px" height="26px" alt="logo ig"></a></li>
+                    </ul>
+                    <p>Facturation via SMARTBE<br>
+                                           Productions associées ASBL<br>
+                                           Rue Emile Féron 70, 1060 Bruxelles<br>
+                                           TVA N° BE 0896 755 397</p>
+                </div>
             </section>
         </main>
 
-        <footer class="p-2">
+        <footer class="container-fluid row">
+            <hr>
             <ul class="d-flex align-items-center justify-content-center">
                 <li><a href="https://www.facebook.com/BXLStudiomobile"><img src="images/fb.webp" width="20px" height="20px" alt="logo fb"></a></li>
                 <li><a href="https://www.instagram.com/BXLStudiomobile"><img src="images/ig.webp" width="20px" height="20px" alt="logo ig"></a></li>

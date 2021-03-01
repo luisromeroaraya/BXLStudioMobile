@@ -2,27 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 p, h2, h3, h4 {
     text-shadow: 2px 2px 1px #111111;
 }
- 
+
+li {
+    list-style-type: none;
+}
+
+header {
+    height: 10.5vh;
+}
+
 #menu li a:hover {
     color: silver;
 }
 
-body {
-    margin-top: 100px;
+main, #services, #musique, #videos, #contact {
+    padding-top: 10.5vh;
 }
 
-#bannerGrid {
+#banner {
     background: url("images/banner.jpg") no-repeat center center;
-    background-size: 100% 100%;
+    background-size: cover;
     color: white;
-    height: 450px;
-    margin-left: 0px;
-    margin-right: 0px;
+    width: auto;
+    border: solid #e2e5ea 10px;
 }
 
 #bannerR img {
@@ -42,7 +50,18 @@ body {
      1px  1px 5px #555;
 }
 
-#videos .col {
+#musiquePhoto {
+    height: calc(50vh - 10.5vh);
+    background: url("images/360.jpg") no-repeat center center;
+    background-size: contain;
+}
+
+.song {
+    height: (15vh);
+}
+
+.video {
+    height: calc(40vh);
     background-color: black;
 }
 
@@ -50,54 +69,16 @@ body {
     background-image: url("images/yo.jpg");
     background-repeat: no-repeat;
     background-position: center top;
+    background-size: cover;
 }
 
-input[type=text]{
-    width: 199px;
-    padding: 10px;
-    box-sizing: border-box;
+input, #text {
+    background-color: rgba(80,85,98,1);
+    padding: 0.5em;
+    border: solid #212529 1px;
     color: white;
     font-family: serif;
     font-style: italic;
-    background-color: rgba(80,85,98,1);
-    border: none;
-    margin: 1px;
-  }
-
-input[type=email]{
-    width: 199px;
-    padding: 10px;
-    box-sizing: border-box;
-    color: white;
-    font-family: serif;
-    font-style: italic;
-    background-color: rgba(80,85,98,1);
-    border: none;
-    margin: 1px;
-}
-  
-input[type=tel]{
-    width: 199px;
-    padding: 10px;
-    box-sizing: border-box;
-    color: white;
-    font-family: serif;
-    font-style: italic;
-    background-color: rgba(80,85,98,1);
-    border: none;
-    margin: 1px;
-}
-
-#text {
-    width: 400px;
-    padding: 10px;
-    box-sizing: border-box;
-    color: white;
-    font-family: serif;
-    font-style: italic;
-    background-color: rgba(80,85,98,1);
-    border: none;
-    margin: 1px;
 }
 
 /* input[type=submit]{
