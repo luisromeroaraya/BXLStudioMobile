@@ -104,6 +104,9 @@ main, #services, #musique, #videos, #contact {
     background-size: cover;
 }
 
+#subject {
+    display: none;
+}
 /* input, #text {
     background-color: rgba(80,85,98,1);
     padding: 0.5em;
