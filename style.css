@@ -94,6 +94,7 @@ main, #boton, #services, #musique, #videos, #contact {
 } 
 
 #contactR {
+    height: auto;
     background-image: url("images/yo.jpg");
     background-repeat: no-repeat;
     background-position: center top;
@@ -102,6 +103,11 @@ main, #boton, #services, #musique, #videos, #contact {
 
 #subject {
     display: none;
+}
+
+#text {
+    height: fit-content;
+    resize: none;
 }
 /* input, #text {
     background-color: rgba(80,85,98,1);
