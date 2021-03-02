@@ -27,7 +27,9 @@
     <body class="container bg-dark text-white">
         <header class="container bg-dark fixed-top">
             <nav class="navbar navbar-expand-md navbar-dark" aria-label="Header">
-                <a class="navbar-brand" href="https://www.bxlstudiomobile.com"><img src="images/logoheader.webp" width="auto" height="80px"></a>
+                <a class="navbar-brand" href="https://www.bxlstudiomobile.com">
+                    <img id="headerLogo" class="img-fluid" src="images/logoheader.webp">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -49,7 +51,7 @@
                 <div id="bannerL" class="col">
                 </div>
                 <div id="bannerR" class="col text-center">
-                    <img src="images/logo.webp" width="265px" height="263px" alt="Logo">
+                    <img src="images/logo.webp" class="img-fluid" alt="Logo">
                     <h2 class="font-italic">Studio d'enregistrement multipiste</h>
                 </div>
             </section>
@@ -111,7 +113,7 @@
                 </div>
             </section>
 
-            <section id="musique" class="row">
+            <section id="musique" class="row g-1">
                 <hr>
                 <div id="musiquePhoto" class="w-100"></div>
                 <iframe class="song col-12 col-md-6" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/973786141&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
@@ -122,7 +124,7 @@
                 <iframe class="song col-12 col-md-6" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/973798219&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
             </section>
             
-            <section id="videos" class="row">
+            <section id="videos" class="row g-1">
                 <hr>
                 <iframe class="video col-12 col-md-6" src="https://www.youtube.com/embed/UZt8jyHf-2Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
                 <iframe class="video col-12 col-md-6" src="https://player.vimeo.com/video/76301149" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
@@ -130,22 +132,44 @@
                 <iframe class="video col-12 col-md-6" src="https://www.youtube.com/embed/eR0G8po084I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
 
-            <section id="contact" class="row mb-3">
+            <section id="contact" class="row">
                 <hr>
-                <div id="contactL" class="col-12 col-md-6">
+                <div id="contactL" class="col-12 col-md-6 mb-3">
                     <h2 class="text-center">Contacte-nous pour un devis détaillé et adapté de ton projet.</h2>
-                    <br>
-                    <form id="contactForm" action="https://send.pageclip.co/2MwHvTxZPPqL20P5lZ6PlziTLDrSvI45/Contact" class="pageclip-form row" method="post">
-                        <input id="prenom" class="col-12 col-md-6 mb-1" type="text" name="fname" placeholder="Prénom" required><input id="famille" class="col-12 col-md-6 mb-1" type="text" name="lname" placeholder="Nom de famille">
-                        <input id="email" class="col-12 col-md-6 mb-1" type="email" name="email" placeholder="Email" required><input id="telephone" class="col-12 col-md-6 mb-1" type="tel" name="phone" placeholder="Téléphone e.g: 0123456789" pattern="0[1-9]{3}[0-9]{6}">
-                        <textarea id="text" class="col-12 mb-1" name="body" placeholder="Date, heure, lieu, nombre de pistes, instruments, etc..." rows="4" required></textarea>
-                        <button id="submit" type="submit" class="col-4 btn btn-secondary pageclip-form__submit">
-                            <span>Send</span>
-                        </button>
+                    <form id="contactForm" class="row g-1">
+                        <div class="form-floating col-12 col-md-6">
+                            <input id="prenom" class="form-control bg-dark text-white" type="text" name="fname" required>
+                            <label for="prenom">Prénom</label>
+                        </div>
+                        <div class="form-floating col-12 col-md-6">
+                            <input id="famille" class="form-control bg-dark text-white" type="text" name="lname">
+                            <label for="famille">Nom de famille</label>
+                        </div>
+                        <div class="form-floating col-12 col-md-6">
+                            <input id="email" class="form-control bg-dark text-white" type="email" name="email" required>    
+                            <label for="email">Email e.g: name@mail.com</label>
+                        </div>
+                        <div class="form-floating col-12 col-md-6">
+                            <input id="telephone" class="form-control bg-dark text-white" type="tel" name="phone" pattern="0[1-9]{3}[0-9]{6}">    
+                            <label for="telephone">Téléphone e.g: 0123456789</label>
+                        </div>
+                        <div class="form-floating col-12">
+                            <textarea id="text" class="form-control bg-dark text-white" name="body" rows="4" required></textarea>    
+                            <label for="text">Date, heure, lieu, nombre de pistes, instruments, etc...</label>
+                        </div>
+                        <div class="form-check col-12">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
+                        </div>
+                        <div class="col-12">
+                            <button id="submit" type="submit" class="btn btn-secondary d-flex justify-content-end">
+                                 <span>Send</span>
+                            </button>
+                        </div>
                         <input id="subject" type="hidden" name="subject" value="Contact">
                     </form>
                 </div>
-                <div id=contactR class="col-12 col-md-6 text-center">
+                <div id=contactR class="col-12 col-md-6 mb-3 text-center">
                     <p>BXL Studio Mobile</p>
                     <p>bxlstudiomobile@gmail.com</p>
                     <ul class="d-flex align-items-center justify-content-center">

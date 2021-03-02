@@ -14,7 +14,11 @@ li {
 }
 
 header {
-    height: 10.5vh;
+    height: auto;
+}
+
+#headerLogo {
+    max-height: 80px;
 }
 
 #menu li a:hover {
@@ -51,19 +55,47 @@ main, #services, #musique, #videos, #contact {
 }
 
 #musiquePhoto {
-    height: calc(50vh - 10.5vh);
+    height: calc(48vh - 10.5vh);
     background: url("images/360.jpg") no-repeat center center;
-    background-size: contain;
+    background-size: cover;
 }
 
 .song {
-    height: (15vh);
+    height: 16vh;
 }
 
 .video {
-    height: calc(40vh);
+    height: calc((100vh - 10.5vh)/2);
     background-color: black;
 }
+
+@media only screen and (max-width: 768px) {
+    main, #services, #musique, #videos, #contact {
+        padding-top: 14vh;
+    }
+
+    #musiquePhoto {
+        height: calc(44vh - 14vh);
+    }
+    
+    .song {
+        height: 8vh;
+    }
+    
+    .video {
+        height: calc((94vh - 14vh)/4);
+        background-color: black;
+    }
+
+    #bannerL {
+        display: none;
+    }
+
+    #headerLogo {
+        max-width: 200px;
+        height: auto;
+    }
+} 
 
 #contactR {
     background-image: url("images/yo.jpg");
@@ -72,7 +104,7 @@ main, #services, #musique, #videos, #contact {
     background-size: cover;
 }
 
-input, #text {
+/* input, #text {
     background-color: rgba(80,85,98,1);
     padding: 0.5em;
     border: solid #212529 1px;
@@ -80,6 +112,7 @@ input, #text {
     font-family: serif;
     font-style: italic;
 }
+*/
 
 /* input[type=submit]{
     width: 150px;
