@@ -109,24 +109,19 @@ main, #boton, #services, #musique, #videos, #contact {
     height: fit-content;
     resize: none;
 }
-/* input, #text {
-    background-color: rgba(80,85,98,1);
-    padding: 0.5em;
-    border: solid #212529 1px;
-    color: white;
-    font-family: serif;
-    font-style: italic;
-}
-*/
 
-/* input[type=submit]{
-    width: 150px;
-    padding: 10px;
-    box-sizing: border-box;
-    color: white;
-    font-family: serif;
-    background-color: rgb(63, 66, 80);
-    border: none;
-    margin: 1px;
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #212529 inset;
+  box-shadow: 0 0 0px 1000px #212529 inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
-*/
