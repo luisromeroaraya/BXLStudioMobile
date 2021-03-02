@@ -78,10 +78,6 @@ main, #boton, #services, #musique, #videos, #contact {
         height: calc(44vh - 14vh);
     }
     
-    .song {
-        height: 8vh;
-    }
-    
     .video {
         height: calc((94vh - 14vh)/4);
         background-color: black;
