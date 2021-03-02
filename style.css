@@ -25,7 +25,7 @@ header {
     color: silver;
 }
 
-main, #services, #musique, #videos, #contact {
+main, #boton, #services, #musique, #videos, #contact {
     padding-top: 10.5vh;
 }
 

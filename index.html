@@ -23,7 +23,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
 	    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap" rel="stylesheet">   
     </head>
- 
     <body class="container bg-dark text-white">
         <header class="container bg-dark fixed-top">
             <nav class="navbar navbar-expand-md navbar-dark" aria-label="Header">
@@ -44,6 +43,25 @@
                 </div>
             </nav>
         </header>
+  
+        <!-- COOKIES MODAL -->
+        <article id="cookies" class="modal fade container-fluid" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div id="cookiesContent" class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <h5 class="modal-title">This website uses some cookies</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>We use cookies to analyse our traffic. We also share information about your use of our site with our analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="acceptCookies" type="button" class="btn btn-success">Accept cookies</button>
+                        <button id="closeCookies" type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- END COOKIES MODAL -->
 
         <main class="container-fluid">
             <section id="banner" class="row">
