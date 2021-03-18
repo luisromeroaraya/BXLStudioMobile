@@ -11,6 +11,58 @@ html{
     scroll-behavior: smooth;
 }
 
+/* cookie container */
+.hidden {
+    display: none;
+}
+
+.cookie-container{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0,0.8);
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+.cookie-content{
+    position: relative;
+    background: white;
+    color: black;
+    width: 100%;
+    top: 100px;
+    padding: 10px 10px;
+}
+.cookie-body{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.cookie-footer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.cookie-btn{
+    width: 150px;
+    border: 0px;
+    outline: none;
+    margin: 0px 5px;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cookie-btn:hover{
+    transform: scale(1.04);
+}
+#acceptCookies{
+    background: green;
+}
+#closeCookies{
+    background: black;
+}
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;

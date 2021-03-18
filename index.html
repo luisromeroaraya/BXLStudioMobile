@@ -17,9 +17,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
 
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="scroll-up-btn">
@@ -29,12 +29,12 @@
         <div class="max-width">
             <div class="logo"><a href="#"><img src="images/logoheader.png" height="60px" alt="BXL Studio Mobile"></div>
             <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#services" class="menu-btn">Services</a></li>
-                <li><a href="#music" class="menu-btn">Music</a></li>
-                <li><a href="#videos" class="menu-btn">Videos</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
+                <li><a href="#home" class="menu-btn" id="menuHome">Home</a></li>
+                <li><a href="#about" class="menu-btn" id="menuAbout">About us</a></li>
+                <li><a href="#services" class="menu-btn" id="menuServices">Services</a></li>
+                <li><a href="#music" class="menu-btn" id="menuMusic">Music</a></li>
+                <li><a href="#videos" class="menu-btn" id="menuvideos">Videos</a></li>
+                <li><a href="#contact" class="menu-btn" id="menuContact">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -42,14 +42,29 @@
         </div>
     </nav>
 
+    <!-- cookie section start -->
+    <article id="cookies" class="cookie-container hidden" tabindex="-1" aria-hidden="true">
+        <div class="cookie-content">
+            <div class="cookie-body">
+                <h2>This website uses some cookies</h2>
+                <br>
+                <p>We use cookies to analyse our traffic. We also share information about your use of our site with our analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services</p>
+            </div>
+            <div class="cookie-footer">
+                <button class="cookie-btn" id="acceptCookies" type="button">Accept cookies</button>
+                <button class="cookie-btn"id="closeCookies" type="button">Close</button>
+            </div>
+        </div>
+    </article>
+
     <!-- home section start -->
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Mobile Multitrack Recording Studio</div>
-                <h1 class="text-2">BXL Studio Mobile</h1>
-                <div class="text-3">We can record your <span class="typing"></span></div>
-                <a href="#about">About us</a>
+                <div class="text-1" id="homeText1">Mobile multitrack recording studio</div>
+                <h1 class="text-2" id="homeText2">BXL Studio Mobile</h1>
+                <div class="text-3" id="homeText3">We can record your <span class="typing"></span></div>
+                <a href="#about" id="homeText4">About us</a>
             </div>
         </div>
     </section>
@@ -57,16 +72,16 @@
     <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">About us</h2>
+            <h2 class="title" id="aboutText1">About us</h2>
             <div class="about-content">
                 <div class="column left">
                     <img src="images/logo.png" alt="Logo">
                 </div>
                 <div class="column right">
-                    <h3 class="text">The studio at your home!</h3>
-                    <div class="text">Record your <span class="typing-2"></span></div>
-                    <p> Multitrack recording session (in and out of Brussels). Simultaneous recording of up to 16 tracks at the location of your convenience. Either we record everyone playing together or track by track. Ideal for developing your first demo pieces, record live sessions or stream your concert. At the end of the session you receive a pre-mix of the recording and all the separate audio tracks. Song mixing service has an additional cost.</p>
-                    <a href="#music">Our works</a>
+                    <h3 class="text" id="aboutText2">The studio at your home!</h3>
+                    <div class="text" id="aboutText3">Record your <span class="typing-2"></span></div>
+                    <p id="aboutText4"> Multitrack recording session (in and out of Brussels). Simultaneous recording of up to 16 tracks at the location of your convenience. Either we record everyone playing together or track by track. Ideal for developing your first demo pieces, record live sessions or stream your concert. At the end of the session you receive a pre-mix of the recording and all the separate audio tracks. Song mixing service has an additional cost.</p>
+                    <a href="#music" id="aboutText5">Our works</a>
                 </div>
             </div>
         </div>
