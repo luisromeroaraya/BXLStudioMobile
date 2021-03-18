@@ -53,8 +53,6 @@ $(document).ready(function(){
         loop: true,
         margin: 20,
         video: true,
-        autoplayTimeOut: 2000,
-        autoplayHoverPause: true,
         responsive: {
             0:{
                 items: 1,
