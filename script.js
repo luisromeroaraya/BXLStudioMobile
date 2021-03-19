@@ -48,7 +48,10 @@ $(document).ready(function(){
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
-        document.getElementsByClassName("lang-menu")[0].classList.toggle("hidden");
+    });
+    
+    $('.sandwich').click(function(){
+        document.getElementsByClassName("lang-menu")[0].classList.toggle("hidden"); 
     });
 
     // typing text animation script

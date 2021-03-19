@@ -12,37 +12,45 @@ html{
 }
 
 /* lang menu */
-.lang-menu {
+.lang-menu{
     width: 64px;
     font-weight: bold;
     position: relative;
 }
-.lang-menu .selected-lang {
+.lang-menu .selected-lang{
     display: flex;
     color: white;
     line-height: 2;
     cursor: pointer;
     width: 32px;
     height: 32px;
+    transition: all 0.3s ease;
 }
-.lang-menu ul {
+.lang-menu .selected-lang:hover{
+    color: rgb(30, 30, 30);
+}
+.lang-menu ul{
     position: absolute;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
 }
-.lang-menu ul li {
+.lang-menu ul li{
     display: flex;
     text-align: left;
     list-style: none;
 }
-.lang-menu ul li a {
+.lang-menu ul li a{
     display: inline-block;
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
-.lang-menu ul li:hover {
+.lang-menu ul li a:hover{
+    color: rgb(30, 30, 30);
+}
+.lang-menu ul li:hover{
     background-color: rgba(255, 255, 255, 0.2);
 }
-.en:before {
+.en:before{
     content: '';
     display: inline-block;
     width: 32px;
@@ -52,7 +60,7 @@ html{
     background-repeat: no-repeat;
     background-image: url(https://www.countryflags.io/gb/flat/32.png);
 }
-.es:before {
+.es:before{
     content: '';
     display: inline-block;
     width: 32px;
@@ -62,7 +70,7 @@ html{
     background-repeat: no-repeat;
     background-image: url(https://www.countryflags.io/es/flat/32.png);
 }
-.fr:before {
+.fr:before{
     content: '';
     display: inline-block;
     width: 32px;
@@ -72,7 +80,7 @@ html{
     background-repeat: no-repeat;
     background-image: url(https://www.countryflags.io/fr/flat/32.png);
 }
-.nl:before {
+.nl:before{
     content: '';
     display: inline-block;
     width: 32px;
