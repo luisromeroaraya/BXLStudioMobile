@@ -11,11 +11,84 @@ html{
     scroll-behavior: smooth;
 }
 
-/* cookie container */
+/* lang menu */
+.lang-menu {
+    width: 64px;
+    font-weight: bold;
+    position: relative;
+}
+.lang-menu .selected-lang {
+    display: flex;
+    color: white;
+    line-height: 2;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+}
+.lang-menu ul {
+    position: absolute;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+.lang-menu ul li {
+    display: flex;
+    text-align: left;
+    list-style: none;
+}
+.lang-menu ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+.lang-menu ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.en:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://www.countryflags.io/gb/flat/32.png);
+}
+.es:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://www.countryflags.io/es/flat/32.png);
+}
+.fr:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://www.countryflags.io/fr/flat/32.png);
+}
+.nl:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://www.countryflags.io/nl/flat/32.png);
+}
+
+/* hidden class */
 .hidden {
     display: none;
 }
 
+/* cookie container */
 .cookie-container{
     position: fixed;
     height: 100vh;
@@ -315,8 +388,7 @@ section .title::after{
 .videos .title::before{
     background: #fff;
 }
-.services .title::after,
-.videos .title::after{
+.services .title::after{
     background: #111;
     content: "what we do";
     color: #fff;
@@ -439,7 +511,9 @@ section .title::after{
 
 /* videos section styling */
 .videos .title::after{
+    background: #111;
     content: "video samples";
+    color: #fff;
 }
 .videos .owl-carousel .card{
     background: black;

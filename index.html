@@ -27,15 +27,24 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#"><img src="images/logoheader.png" height="60px" alt="BXL Studio Mobile"></div>
+            <div class="logo"><a href="#"><img src="images/logoheader.png" height="60px" alt="BXL Studio Mobile"></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn" id="menuHome">Home</a></li>
                 <li><a href="#about" class="menu-btn" id="menuAbout">About us</a></li>
                 <li><a href="#services" class="menu-btn" id="menuServices">Services</a></li>
                 <li><a href="#music" class="menu-btn" id="menuMusic">Music</a></li>
-                <li><a href="#videos" class="menu-btn" id="menuvideos">Videos</a></li>
+                <li><a href="#videos" class="menu-btn" id="menuVideos">Videos</a></li>
                 <li><a href="#contact" class="menu-btn" id="menuContact">Contact</a></li>
             </ul>
+            <div class="lang-menu">
+                <div class="selected-lang" id="selected-lang"><img src="https://www.countryflags.io/gb/flat/32.png" alt="EN">EN</div>
+                <ul class="hidden" id="lang-menu">
+                    <li><a href ="#" class="en" id="buttonEN">EN</a></li>
+                    <li><a href ="#" class="es" id="buttonES">ES</a></li>
+                    <li><a href ="#" class="fr" id="buttonFR">FR</a></li>
+                    <li><a href ="#" class="nl" id="buttonNL">NL</a></li>
+                </ul>
+            </div>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
@@ -61,10 +70,10 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1" id="homeText1">Mobile multitrack recording studio</div>
-                <h1 class="text-2" id="homeText2">BXL Studio Mobile</h1>
-                <div class="text-3" id="homeText3">We can record your <span class="typing"></span></div>
-                <a href="#about" id="homeText4">About us</a>
+                <div class="text-1" id="homeSubTitle">Mobile multitrack recording studio</div>
+                <h1 class="text-2" id="homeTitle">BXL Studio Mobile</h1>
+                <div class="text-3" id="homeTagline">We can record your <span class='typing'></span></div>
+                <a href="#about" id="homeLink">About us</a>
             </div>
         </div>
     </section>
@@ -72,16 +81,16 @@
     <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title" id="aboutText1">About us</h2>
+            <h2 class="title" id="aboutTitle">About us</h2>
             <div class="about-content">
                 <div class="column left">
                     <img src="images/logo.png" alt="Logo">
                 </div>
                 <div class="column right">
-                    <h3 class="text" id="aboutText2">The studio at your home!</h3>
-                    <div class="text" id="aboutText3">Record your <span class="typing-2"></span></div>
-                    <p id="aboutText4"> Multitrack recording session (in and out of Brussels). Simultaneous recording of up to 16 tracks at the location of your convenience. Either we record everyone playing together or track by track. Ideal for developing your first demo pieces, record live sessions or stream your concert. At the end of the session you receive a pre-mix of the recording and all the separate audio tracks. Song mixing service has an additional cost.</p>
-                    <a href="#music" id="aboutText5">Our works</a>
+                    <h3 class="text" id="aboutSubTitle">The studio at your home!</h3>
+                    <div class="text" id="aboutTagline">Record your <span class='typing-2'></span></div>
+                    <p id="aboutText"> Multitrack recording session (in and out of Brussels). Simultaneous recording of up to 16 tracks at the location of your convenience. Either we record everyone playing together or track by track. Ideal for developing your first demo pieces, record live sessions or stream your concert. At the end of the session you receive a pre-mix of the recording and all the separate audio tracks. Song mixing service has an additional cost.</p>
+                    <a href="#music" id="aboutLink">Our works</a>
                 </div>
             </div>
         </div>
@@ -90,30 +99,30 @@
     <!-- services section start -->
     <section class="services" id="services">
         <div class="max-width">
-            <h2 class="title">Our services</h2>
+            <h2 class="title" id="servicesTitle">Our services</h2>
             <div class="serv-content">
                 <div class="card">
                     <div class="box" id="services-studio">
                         <img class="lazyload" data-src="images/studio.jpg" alt="Studio"><br>
                         <i class="fas fa-microphone"></i>
-                        <div class="text">Mobile Studio</div>
-                        <p>Bring the studio to your home or wherever you want.</p>
+                        <div class="text" id="servicesStudioTitle">Mobile Studio</div>
+                        <p id="servicesStudioText">Bring the studio to your home or wherever you want.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box" id="services-live">
                         <img class="lazyload" data-src="images/live.jpg" alt="Live"><br>
                         <i class="fas fa-music"></i>
-                        <div class="text">Live Recording</div>
-                        <p>Complement the production of your live concert videos.</p>
+                        <div class="text" id="servicesLiveTitle">Live Recording</div>
+                        <p id="servicesLiveText">Complement the production of your live concert videos.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box" id="services-streaming">
                         <img class="lazyload" data-src="images/streaming.jpg" alt="Streaming"><br>
                         <i class="fas fa-podcast"></i>
-                        <div class="text">Streaming</div>
-                        <p>Add professional audio quality to your live concert streamings.</p>
+                        <div class="text" id="servicesStreamingTitle">Streaming</div>
+                        <p id="servicesStreamingText">Add professional audio quality to your live concert streamings.</p>
                     </div>
                 </div>
                </div>
@@ -124,7 +133,7 @@
     <!-- music section start -->
     <section class="music" id="music">
         <div class="max-width">
-            <h2 class="title">My music</h2>
+            <h2 class="title" id="musicTitle">Music</h2>
             <div class="music-content">
                 <div class="column left">
                     <iframe width="100%" height="auto" class="lazyload" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/973784998&color=%23111111&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false" scrolling="no" frameborder="no"></iframe>
@@ -142,7 +151,7 @@
     <!-- videos section start -->
     <section class="videos" id="videos">
         <div class="max-width">
-            <h2 class="title">My videos</h2>
+            <h2 class="title" id="videoTitle">Videos</h2>
             <div class="owl-carousel">
                 <div class="card">
                     <div class="box">
@@ -176,10 +185,10 @@
     <!-- contact section start -->
     <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">Contact us</h2>
+            <h2 class="title" id="contactTitle">Contact</h2>
             <div class="contact-content">
                 <div class="column left">
-                    <div class="text">Billing via SMARTBE</div>
+                    <div class="text" id="contactBilling">Billing via SMARTBE</div>
                     <p>
                     Productions associées ASBL<br>
                     Rue Emile Féron 70, 1060 Bruxelles<br>
@@ -217,7 +226,7 @@
                     </div>
                 </div>
                 <div class="column right">
-                    <div class="text">Contact us for a detailed quote adapted to your project.</div>
+                    <div class="text" id="contactSubTitle">Contact us for a detailed quote adapted to your project.</div>
                     <form action="https://send.pageclip.co/2MwHvTxZPPqL20P5lZ6PlziTLDrSvI45/Contact" class="pageclip-form" method="post">
                         <div class="fields">
                             <div class="field name">
