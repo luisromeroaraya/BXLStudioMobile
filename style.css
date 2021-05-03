@@ -58,8 +58,8 @@ html{
     vertical-align: middle;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(https://flagcdn.com/gb.svg);
-    /* background-image: url(https://www.countryflags.io/gb/flat/32.png); */
+    /* background-image: url(https://flagcdn.com/gb.svg); */
+    background-image: url(https://www.countryflags.io/gb/flat/32.png);
 }
 .es:before{
     content: '';
@@ -69,8 +69,8 @@ html{
     vertical-align: middle;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(https://flagcdn.com/es.svg);
-    /* background-image: url(https://www.countryflags.io/es/flat/32.png); */
+    /* background-image: url(https://flagcdn.com/es.svg); */
+    background-image: url(https://www.countryflags.io/es/flat/32.png);
 }
 .fr:before{
     content: '';
@@ -80,8 +80,8 @@ html{
     vertical-align: middle;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(https://flagcdn.com/fr.svg);
-    /* background-image: url(https://www.countryflags.io/fr/flat/32.png); */
+    /* background-image: url(https://flagcdn.com/fr.svg); */
+    background-image: url(https://www.countryflags.io/fr/flat/32.png);
 }
 .nl:before{
     content: '';
@@ -91,8 +91,8 @@ html{
     vertical-align: middle;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(https://flagcdn.com/nl.svg);
-    /* background-image: url(https://www.countryflags.io/nl/flat/32.png); */
+    /* background-image: url(https://flagcdn.com/nl.svg); */
+    background-image: url(https://www.countryflags.io/nl/flat/32.png);
 }
 
 /* hidden class */
