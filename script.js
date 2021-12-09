@@ -213,23 +213,23 @@ $(document).ready(function(){
     function changeLanguage() {
         if (this.innerHTML == "EN") {
             var array = Object.entries(language.en);
-            document.getElementById("selected-lang").innerHTML = "<img src='https://www.countryflags.io/gb/flat/32.png' alt='EN'>EN";
-            //document.getElementById("selected-lang").innerHTML = "<img src='https://flagcdn.com/gb.svg' width='32' alt='EN'></img>EN";
+            //document.getElementById("selected-lang").innerHTML = "<img src='https://www.countryflags.io/gb/flat/32.png' alt='EN'>EN";
+            document.getElementById("selected-lang").innerHTML = "<img src='https://flagcdn.com/gb.svg' width='32' alt='EN'></img>EN";
         }
         if (this.innerHTML == "ES") {
             var array = Object.entries(language.es);
-            document.getElementById("selected-lang").innerHTML = document.getElementById("selected-lang").innerHTML = "<img src='https://www.countryflags.io/es/flat/32.png' alt='ES'>ES";
-            //document.getElementById("selected-lang").innerHTML = document.getElementById("selected-lang").innerHTML = "<img src='https://flagcdn.com/es.svg' width='32' alt='ES'></img>ES";
+            //document.getElementById("selected-lang").innerHTML = document.getElementById("selected-lang").innerHTML = "<img src='https://www.countryflags.io/es/flat/32.png' alt='ES'>ES";
+            document.getElementById("selected-lang").innerHTML = document.getElementById("selected-lang").innerHTML = "<img src='https://flagcdn.com/es.svg' width='32' alt='ES'></img>ES";
         }
         if (this.innerHTML == "FR") {
             var array = Object.entries(language.fr);
-            document.getElementById("selected-lang").innerHTML = document.getElementById("selected-lang").innerHTML = "<img src='https://www.countryflags.io/fr/flat/32.png' alt='FR'>FR";
-            //document.getElementById("selected-lang").innerHTML = document.getElementById("selected-lang").innerHTML = "<img src='https://flagcdn.com/fr.svg' width='32' alt='FR'></img>FR";
+            //document.getElementById("selected-lang").innerHTML = document.getElementById("selected-lang").innerHTML = "<img src='https://www.countryflags.io/fr/flat/32.png' alt='FR'>FR";
+            document.getElementById("selected-lang").innerHTML = document.getElementById("selected-lang").innerHTML = "<img src='https://flagcdn.com/fr.svg' width='32' alt='FR'></img>FR";
         }
         if (this.innerHTML == "NL") {
             var array = Object.entries(language.nl);
-            document.getElementById("selected-lang").innerHTML = document.getElementById("selected-lang").innerHTML = "<img src='https://www.countryflags.io/nl/flat/32.png' alt='NL'>NL";
-            //document.getElementById("selected-lang").innerHTML = document.getElementById("selected-lang").innerHTML = "<img src='https://flagcdn.com/nl.svg' width='32' alt='NL'></img>NL";
+            //document.getElementById("selected-lang").innerHTML = document.getElementById("selected-lang").innerHTML = "<img src='https://www.countryflags.io/nl/flat/32.png' alt='NL'>NL";
+            document.getElementById("selected-lang").innerHTML = document.getElementById("selected-lang").innerHTML = "<img src='https://flagcdn.com/nl.svg' width='32' alt='NL'></img>NL";
         }
         array.forEach(function(value) {
             var id = document.getElementById(value[0]);
