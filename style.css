@@ -30,12 +30,15 @@ html{
 }
 .lang-menu ul{
     position: absolute;
+    margin-top: 5px;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
 }
 .lang-menu ul li{
     display: flex;
     text-align: left;
     list-style: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .lang-menu ul li a{
     display: inline-block;
@@ -53,11 +56,11 @@ html{
     content: '';
     display: inline-block;
     width: 32px;
-    height: 32px;
+    height: 16px;
     vertical-align: middle;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(/images/gb.svg);
+    background-image: url(images/gb.svg);
     /* background-image: url(https://flagcdn.com/gb.svg); */
     /* background-image: url(https://www.countryflags.io/gb/flat/32.png); */
     
@@ -66,11 +69,11 @@ html{
     content: '';
     display: inline-block;
     width: 32px;
-    height: 32px;
+    height: 16px;
     vertical-align: middle;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(/images/es.svg);
+    background-image: url(images/es.svg);
     /* background-image: url(https://flagcdn.com/es.svg); */
     /* background-image: url(https://www.countryflags.io/es/flat/32.png); */
 }
@@ -78,11 +81,11 @@ html{
     content: '';
     display: inline-block;
     width: 32px;
-    height: 32px;
+    height: 16px;
     vertical-align: middle;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(/images/fr.svg);
+    background-image: url(images/fr.svg);
     /* background-image: url(https://flagcdn.com/fr.svg); */
     /* background-image: url(https://www.countryflags.io/fr/flat/32.png); */
 }
@@ -90,11 +93,11 @@ html{
     content: '';
     display: inline-block;
     width: 32px;
-    height: 32px;
+    height: 16px;
     vertical-align: middle;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(/images/nl.svg);
+    background-image: url(images/nl.svg);
     /* background-image: url(https://flagcdn.com/nl.svg); */
     /* background-image: url(https://www.countryflags.io/nl/flat/32.png); */
 }
